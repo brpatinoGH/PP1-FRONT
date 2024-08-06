@@ -14,8 +14,8 @@ body{
     right: 100px; /* Posición en la parte derecha */
     margin: 10px; /* Espacio alrededor del texto, ajusta según sea necesario */
     padding: 30px; /* Espacio interno alrededor del texto */
-    font-size: 90px; /* Tamaño de fuente opcional */
-    color: #DAC7AB; /* Color del texto */
+    font-size: 90px;
+    color: #DAC7AB;
     text-align: center;
 }
 
@@ -35,20 +35,20 @@ text-align: center;
 }
 
 .iniciosesion {
-    position: fixed; /* Fija el botón en la pantalla */
-    bottom: 250px; /* Distancia desde el borde inferior */
-    left: 150px; /* Distancia desde el borde izquierdo */
-    width: 30%; /* Ancho del botón */
-    height: 70px; /* Altura del botón */
-    background: #C28A35; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    font-size: 16px; /* Tamaño de fuente */
-    border: none; /* Sin borde */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+    position: fixed;
+    bottom: 250px;
+    left: 150px;
+    width: 30%;
+    height: 70px;
+    background: #C28A35;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex; /* Usa Flexbox para centrar el contenido */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     transition: background 0.3s, box-shadow 0.3s; /* Transiciones para efectos */
 }
@@ -64,19 +64,19 @@ text-align: center;
 }
 
 .registrarse{
-    position: fixed; /* Fija el botón en la pantalla */
-    bottom: 150px; /* Distancia desde el borde inferior */
-    left: 150px; /* Distancia desde el borde izquierdo */
-    width: 30%; /* Ancho del botón */
-    height: 70px; /* Altura del botón */
-    background: #DAC7AB; /* Color de fondo del botón */
-    color: #544B3D; /* Color del texto */
-    font-size: 16px; /* Tamaño de fuente */
-    border: none; /* Sin borde */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+    position: fixed;
+    bottom: 150px;
+    left: 150px;
+    width: 30%;
+    height: 70px;
+    background: #DAC7AB;
+    color: #544B3D;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex; /* Usa Flexbox para centrar el contenido */
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
     align-items: center; /* Centra verticalmente */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     transition: background 0.3s, box-shadow 0.3s; /* Transiciones para efectos */
@@ -121,4 +121,3 @@ text-align: center;
     top: -20px; 
     left:-10px; 
 }
-
