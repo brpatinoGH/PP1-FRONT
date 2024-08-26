@@ -1,0 +1,79 @@
+/*navbarcustom*/
+.navbar-custom {
+    background-color: #FFECD1;
+}
+
+.custom-link {
+    color: #544B3D !important; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: 500; /* Hace el texto más grueso */
+    transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+    color: #d39839 !important; /* Cambia el color cuando el usuario pasa el cursor por encima */
+}
+
+/*body*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Elimina el scroll horizontal */
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    background-color: #436A36 !important;
+  }
+  
+  .container-full {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+  }
+
+/*img*/
+.imagenes {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.forma {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}
+
+/*calendario*/
+#calendario {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn-dia {
+    background-color: #544B3D;
+    color: #FFECD1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dia:hover {
+    background-color: #6a5f4c;
+}
+
