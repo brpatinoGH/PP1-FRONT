@@ -1,43 +1,50 @@
-function obtenerProximaSemana() {
-    let fechaActual = new Date();
-    
-    // Si hoy es sábado o domingo, mueve la fecha al siguiente lunes
-    if (fechaActual.getDay() === 6) { // Sábado
-        fechaActual.setDate(fechaActual.getDate() + 2);
-    } else if (fechaActual.getDay() === 0) { // Domingo
-        fechaActual.setDate(fechaActual.getDate() + 1);
-    }
+// Selecciona todos los botones de días
+const buttons = document.querySelectorAll('.diasEncargar button');
+const btnContinuar = document.getElementById('btnContinuar');
 
-    let inicioSemana = new Date(fechaActual);
-    inicioSemana.setDate(inicioSemana.getDate() + (1 - inicioSemana.getDay()) + 7); // Lunes siguiente
-    let finSemana = new Date(inicioSemana);
-    finSemana.setDate(finSemana.getDate() + 4); // Viernes de la próxima semana
+// Recupera los días seleccionados del localStorage al cargar la página
+let selectedDays = JSON.parse(localStorage.getItem('selectedDays')) || [];
 
-    return { inicio: inicioSemana, fin: finSemana };
-}
-
-function mostrarDiasSemana() {
-    let semana = obtenerProximaSemana();
-    let calendario = document.getElementById("calendario");
-    calendario.innerHTML = ""; // Limpia cualquier contenido previo
-
-    let diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"];
-    for (let i = 0; i < diasSemana.length; i++) {
-        let dia = new Date(semana.inicio);
-        dia.setDate(dia.getDate() + i);
-        
-        let botonDia = document.createElement("button");
-        botonDia.className = "btn-dia";
-        botonDia.innerText = `${diasSemana[i]} (${dia.getDate()}/${dia.getMonth() + 1}/${dia.getFullYear()})`;
-        calendario.appendChild(botonDia);
+// Función para actualizar el estado del botón "Continuar"
+function updateContinueButton() {
+    if (selectedDays.length > 0) {
+        btnContinuar.disabled = false;
+    } else {
+        btnContinuar.disabled = true;
     }
 }
 
-mostrarDiasSemana();
+// Actualiza el estado visual de los botones según los días seleccionados
+buttons.forEach(button => {
+    const day = button.textContent.trim();
+    if (selectedDays.includes(day)) {
+        button.classList.add('selected'); // Marca los botones ya seleccionados
+    }
 
-document.querySelectorAll(".btn-dia").forEach(boton => {
-    boton.addEventListener("click", function() {
-        this.classList.toggle("selected");
-        // Aquí podrías manejar la lógica para guardar los días seleccionados
+    // Añade el event listener a cada botón
+    button.addEventListener('click', () => {
+        const day = button.textContent.trim();
+
+        if (!selectedDays.includes(day)) {
+            selectedDays.push(day); // Agrega el día a la lista seleccionada
+            button.classList.add('selected'); // Cambia el color del botón
+        } else {
+            selectedDays = selectedDays.filter(d => d !== day); // Elimina el día de la lista seleccionada
+            button.classList.remove('selected'); // Revierte el color del botón
+        }
+
+        // Guarda la lista actualizada en el localStorage
+        localStorage.setItem('selectedDays', JSON.stringify(selectedDays));
+
+        // Actualiza el estado del botón "Continuar"
+        updateContinueButton();
     });
+});
+
+// Inicializa el estado del botón "Continuar"
+updateContinueButton();
+
+// Maneja el botón de continuar
+btnContinuar.addEventListener('click', () => {
+    window.location.href = 'menudia/menu-dia.html';
 });
