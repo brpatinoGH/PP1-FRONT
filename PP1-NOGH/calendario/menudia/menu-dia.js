@@ -23,5 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+// Lógica para mostrar menús dependiendo del día seleccionado
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('/obtener-menus')
+        .then(response => response.json())
+        .then(data => {
+            menus = data.menus;
+            console.log("Menús recibidos:", menus);
+            mostrarMenusParaDia('Lunes'); // O cualquier día seleccionado
+        })
+        .catch(error => console.error('Error al cargar los menús:', error));
 });
 
+function mostrarMenusParaDia(diaSeleccionado) {
+    const menusDiaContainer = document.getElementById('menus-dia-container');
+    menusDiaContainer.innerHTML = ''; // Limpia el contenido anterior
+
+    // Filtra los menús para el día seleccionado
+    const menusParaDia = menus.filter(menu => menu.dias.includes(diaSeleccionado));
+
+    // Muestra los menús correspondientes
+    menusParaDia.forEach(menu => {
+        const menuElement = document.createElement('div');
+        menuElement.innerHTML = `
+            <h3>${menu.nombre}</h3>
+            <p>${menu.descripcion}</p>
+            <button onclick="abrirOpcionesMenu(${menu.id})">Seleccionar</button>
+        `;
+        menusDiaContainer.appendChild(menuElement);
+    });
+}});

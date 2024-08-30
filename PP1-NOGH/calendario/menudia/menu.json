@@ -1,0 +1,16 @@
+{
+    "menus": [
+        {
+            "id": 1,
+            "nombre": "Empanadas",
+            "descripcion": "Empanadas variadas",
+            "dias": ["Lunes", "Miércoles"]
+        },
+        {
+            "id": 2,
+            "nombre": "Pizza",
+            "descripcion": "Pizza casera",
+            "dias": ["Martes", "Jueves"]
+        }
+    ]
+}
