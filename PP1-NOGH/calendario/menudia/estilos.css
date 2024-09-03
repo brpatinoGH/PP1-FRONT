@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;
   /* Elimina el scroll horizontal */
   font-family: "Inter", sans-serif;
 }
@@ -98,6 +98,7 @@ header{ /* pone los botones a la derecha*/
     text-align: center;
     cursor: pointer;
     border-radius: 0.3rem;
+    font-weight: 400 !important;
 }
 
 /* Estilo para el botón al pasar el mouse sobre él */
@@ -112,3 +113,39 @@ header{ /* pone los botones a la derecha*/
     color: #dac29a; /* Color del texto claro */
     border-color: #473d2e; /* Color del borde oscuro */
 }
+
+.container-carrito {
+    position: relative; /* Referencia para la posición absoluta */
+    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+    height: 100vh; /* Ajusta la altura del contenedor según sea necesario (100vh asegura que ocupe toda la altura de la ventana) */
+    bottom: 0;
+    right: 0; 
+}
+
+.carrito-btn {
+    position: fixed; /* Posiciona el botón de manera absoluta dentro del contenedor */
+    bottom: 0; /* Posiciona el botón en la parte superior */
+    right: 0;
+    margin-right: -3.3rem; /* Posiciona el botón en la parte derecha */
+    background: none; /* Elimina el fondo del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    z-index: 1; /* Asegura que el botón esté por encima de la imagen */
+    width: auto;
+    height: auto;
+}
+.carrito-btn img {
+    width: 50%; /* Ajusta el ancho de la imagen dentro del botón */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+.forma2 {
+    position: fixed; /* Posiciona la imagen de manera absoluta dentro del contenedor */
+    bottom: 0; /* Posiciona la imagen en la parte inferior */
+    right: 0; /* Posiciona la imagen en la parte derecha */
+    z-index: 0; /* Asegura que la imagen esté detrás del botón */
+    width: 20%; /* Ajusta el tamaño de la imagen */
+    max-width: 10rem; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
