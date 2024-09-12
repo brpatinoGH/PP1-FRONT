@@ -34,9 +34,61 @@
          </div>
     </main>
 
-   <!-- <div id="menus-dia-container">
-         Aquí se mostrarán los menús del día seleccionado 
-    </div>-->
+    <div class="container-comida">
+        <div class="container-button" onclick="openModal()">
+            <img src="../../imag/empanadadepollo.png" alt="EmpanadaPollo">
+            <h1>Empanada</h1>
+        </div>
+        <div class="container-button" onclick="openModal()">
+            <img src="../../imag/empanadadepollo.png" alt="EmpanadaPollo">
+            <h1>Empanada</h1>
+        </div>
+
+    </div>
+
+<!-- Modal (Ventana emergente) -->
+<div id="customModal" class="custom-modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Empanadas</h2>
+        <div class="modal-body">
+            <!-- Sección derecha -->
+            <div class="modal-right">
+                <div class="modal-image">
+                    <img src="../../imag/empanadadepollo.png" alt="Empanada">
+                </div>
+                <div class="empanada-types">
+                    <button class="empanada-btn">Pollo</button>
+                    <button class="empanada-btn">Carne</button>
+                    <button class="empanada-btn">CyQ</button>
+                    <button class="empanada-btn">Choclo</button>
+                    <button class="empanada-btn">JyQ</button>
+                    <button class="empanada-btn">Verdura</button>
+                </div>
+            </div>
+            <!-- Sección izquierda -->
+            <div class="modal-left">
+                <div class="guarnicion-options">
+                    <p>Guarnición</p>
+                    <label><input type="radio" name="guarnicion" value="No" checked> No</label>
+                    <label><input type="radio" name="guarnicion" value="Si"> Sí (seleccionar en menú correspondiente)</label>
+                </div>
+                <div class="unidades">
+                    <p>Unidades</p>
+                    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                    <span id="quantity">2</span>
+                    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="product-notes">
+                    <label for="product-notes">Notas para producto</label>
+                    <textarea id="product-notes" maxlength="100" placeholder="Escribe instrucciones del pedido"></textarea>
+                    <span class="char-count">0/100</span>
+                </div>
+                <button class="add-to-order-btn">Agregar a mi pedido</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="container-carrito">
         <button class="carrito-btn">
@@ -48,13 +100,6 @@
         
     </div>
     
-    <div class="container-comida">
-        <div id="containerButton" class="container-button">
-            <img src="../../imag/empanadadepollo.png" alt="EmpanadaPollo">
-            <h1>Empanada</h1>
-        </div>
-    </div>
-   
 
     <script src="menu-dia.js"></script>
 

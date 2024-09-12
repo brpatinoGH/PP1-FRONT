@@ -31,6 +31,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+let quantity = 2; // Valor inicial de las unidades
+
+function increaseQuantity() {
+    if (quantity < 2) {  // Limitar a un máximo de 2
+        quantity++;
+        document.getElementById("quantity").textContent = quantity;
+    }
+}
+
+function decreaseQuantity() {
+    if (quantity > 1) {  // Limitar a un mínimo de 1
+        quantity--;
+        document.getElementById("quantity").textContent = quantity;
+    }
+}
+
+function closeModal() {
+    document.getElementById("customModal").style.display = "none";
+}
+
+function openModal() {
+    document.getElementById("customModal").style.display = "block";
+}
+
+
 // Lógica para mostrar menús dependiendo del día seleccionado
 // let menus;
 
