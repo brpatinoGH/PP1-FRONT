@@ -65,9 +65,9 @@ header{ /* pone los botones a la derecha*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .texto1 {
@@ -84,8 +84,10 @@ header{ /* pone los botones a la derecha*/
     justify-content: center; /* Alineamos los botones en el centro horizontalmente */
     flex-wrap: wrap;
     gap: 10px; /* Espacio entre los botones */
-    width: 100%;
+    width: auto;
     margin-top: 20px; /* Espacio entre el texto y los botones */
+    margin: 0;
+    padding: 0;
 }
 
 /* Botones */
@@ -149,3 +151,39 @@ header{ /* pone los botones a la derecha*/
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
+
+.container-comida {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Centrado vertical */
+    min-height: 100vh; /* La altura es igual a la altura de la pantalla */
+    padding-top: 1rem;
+}
+
+.container-button {
+    background-color: #B3C7AB;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Para que la imagen esté arriba del texto */
+    align-items: center;
+    width: 10rem; /* Ajusta el ancho según sea necesario */
+    height: 10rem; /* Ajusta el alto según sea necesario */
+    padding: 10px;
+    border-radius: 3rem; /* Opcional: Para esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: Para añadir sombra */
+    cursor: pointer;
+    margin-bottom: 100rem;
+}
+
+.container-button img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0rem; /* Espacio entre la imagen y el texto */
+}
+
+.container-button h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    text-align: center;
+    color: #32452C;
+}

@@ -32,87 +32,107 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Lógica para mostrar menús dependiendo del día seleccionado
-let menus;
+// let menus;
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM completamente cargado y analizado');
+// document.addEventListener('DOMContentLoaded', () => {
+//     console.log('DOM completamente cargado y analizado');
 
-    // Cargar los menús desde el archivo JSON
-    fetch('menus.json')
-        .then(response => {
-            console.log('Respuesta recibida del fetch:', response);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            menus = data;
-            console.log("Menús cargados:", menus);
+//     fetch('menus.json')
+//         .then(response => {
+//             console.log('Respuesta recibida del fetch:', response);
+//             if (!response.ok) {
+//                 throw new Error(`HTTP error! status: ${response.status}`);
+//             }
+//             return response.json();
+//         })
+//         .then(data => {
+//             menus = data;
+//             console.log("Menús cargados:", menus);
             
-            // Obtener todos los botones de días
-            const botonesDias = document.querySelectorAll('.diasEncargar button');
-            console.log('Botones de días encontrados:', botonesDias.length);
+//             const botonesDias = document.querySelectorAll('.diasEncargar button');
+//             console.log('Botones de días encontrados:', botonesDias.length);
 
-            // Añadir event listener a cada botón
-            botonesDias.forEach(boton => {
-                boton.addEventListener('click', () => {
-                    console.log('Botón clickeado:', boton.textContent);
-                    const dia = boton.textContent;
-                    mostrarMenusParaDia(dia);
-                    // Resaltar el botón seleccionado
-                    botonesDias.forEach(btn => btn.classList.remove('selected'));
-                    boton.classList.add('selected');
-                });
-            });
+//             botonesDias.forEach(boton => {
+//                 boton.addEventListener('click', () => {
+//                     console.log('Botón clickeado:', boton.textContent);
+//                     const dia = boton.textContent;
+//                     mostrarMenusParaDia(dia);
+//                     botonesDias.forEach(btn => btn.classList.remove('selected'));
+//                     boton.classList.add('selected');
+//                 });
+//             });
 
-            // Mostrar los menús del Lunes por defecto
-            mostrarMenusParaDia('Lunes');
-        })
-        .catch(error => console.error('Error al cargar los menús:', error));
-});
+//             mostrarMenusParaDia('Lunes');
+//         })
+//         .catch(error => console.error('Error al cargar los menús:', error));
+// });
 
-function mostrarMenusParaDia(diaSeleccionado) {
-    console.log('Mostrando menús para:', diaSeleccionado);
-    const menusDiaContainer = document.getElementById('menus-dia-container');
-    if (!menusDiaContainer) {
-        console.error('No se encontró el contenedor de menús');
-        return;
-    }
+// function mostrarMenusParaDia(diaSeleccionado) {
+//     console.log('Mostrando menús para:', diaSeleccionado);
+//     const menusDiaContainer = document.getElementById('menus-dia-container');
+//     if (!menusDiaContainer) {
+//         console.error('No se encontró el contenedor de menús');
+//         return;
+//     }
     
-    menusDiaContainer.innerHTML = ''; // Limpia el contenido anterior
+//     menusDiaContainer.innerHTML = '';
 
-    // Obtiene los menús para el día seleccionado
-    const menusParaDia = menus[diaSeleccionado];
-    console.log('Menús para el día seleccionado:', menusParaDia);
+//     const menusParaDia = menus[diaSeleccionado];
+//     console.log('Menús para el día seleccionado:', menusParaDia);
 
-    if (menusParaDia && menusParaDia.length > 0) {
-        // Crea un título para el día seleccionado
-        const titulo = document.createElement('h2');
-        titulo.textContent = `Menús para ${diaSeleccionado}`;
-        menusDiaContainer.appendChild(titulo);
+//     if (menusParaDia && menusParaDia.length > 0) {
+//         const titulo = document.createElement('h2');
+//         titulo.textContent = `Menús para ${diaSeleccionado}`;
+//         menusDiaContainer.appendChild(titulo);
 
-        // Muestra los menús correspondientes
-        menusParaDia.forEach(menu => {
-            const menuElement = document.createElement('div');
-            menuElement.className = 'menu-item';
-            menuElement.innerHTML = `
-                <h3>${menu.nombre}</h3>
-                <p>${menu.descripcion}</p>
-                <button onclick="seleccionarMenu(${menu.id})">Seleccionar</button>
-            `;
-            menusDiaContainer.appendChild(menuElement);
-        });
-    } else {
-        menusDiaContainer.innerHTML = '<p>No hay menús disponibles para este día.</p>';
-    }
+//         menusParaDia.forEach(menu => {
+//             const menuElement = document.createElement('div');
+//             menuElement.className = 'menu-item';
+//             menuElement.innerHTML = `
+//                 <h3>${menu.nombre}</h3>
+//                 <p>${menu.descripcion}</p>
+//                 <button onclick="seleccionarMenu(${menu.id})">Seleccionar</button>
+//             `;
+//             menusDiaContainer.appendChild(menuElement);
+//         });
+//     } else {
+//         menusDiaContainer.innerHTML = '<p>No hay menús disponibles para este día.</p>';
+//     }
 
-    // Hacer visible el contenedor de menús
-    menusDiaContainer.style.display = 'block';
-}
+//     menusDiaContainer.style.display = 'block';
+// }
 
-function seleccionarMenu(menuId) {
-    console.log(`Menú seleccionado: ${menuId}`);
-    // Aquí puedes agregar la lógica para manejar la selección del menú
-    alert(`Has seleccionado el menú ${menuId}`);
-}
+// function seleccionarMenu(menuId) {
+//     console.log(`Menú seleccionado: ${menuId}`);
+//     alert(`Has seleccionado el menú ${menuId}`);
+// }
+
+//COMIDAS
+// const botonesDisponibles = [
+//     { id: 'button1', visible: true, imgSrc: 'empanadadepollo.jpg', imgAlt: 'Empanada', text: 'Botón 1' },
+//     { id: 'button2', visible: false, imgSrc: 'tartaverdura.jpg', imgAlt: 'Tarta', text: 'Botón 2' },
+//     { id: 'button3', visible: true, imgSrc: 'patacarnecerdo.jpg', imgAlt: 'Pata muslo / Carne / Cerdo', text: 'Botón 3' }
+// ];
+
+// const buttonsContainer = document.getElementById('buttonsContainer');
+
+// botonesDisponibles.forEach(boton => {
+//     if (boton.visible) {
+//         const containerButton = document.createElement('div');
+//         containerButton.className = 'container-button';
+
+
+//         const imgElement = document.createElement('img');
+//         imgElement.src = boton.imgSrc;
+//         imgElement.alt = boton.imgAlt;
+
+//         const textElement = document.createElement('p');
+//         textElement.textContent = boton.text;
+
+//         containerButton.appendChild(imgElement);
+//         containerButton.appendChild(textElement);
+
+
+//         buttonsContainer.appendChild(containerButton);
+//     }
+// });
