@@ -55,6 +55,80 @@ function openModal() {
     document.getElementById("customModal").style.display = "block";
 }
 
+// Obtener el área de texto y el contador
+const textarea = document.getElementById("product-notes");
+const charCount = document.querySelector(".char-count");
+
+// Escuchar el evento 'input' que se dispara cada vez que se escribe en el textarea
+textarea.addEventListener("input", function() {
+    // Obtener la longitud del texto ingresado
+    const currentLength = textarea.value.length;
+    
+    // Actualizar el contador con el formato 'número de caracteres / máximo permitido'
+    charCount.textContent = `${currentLength}/100`;
+});
+
+
+// Obtener todos los botones de empanadas
+const empanadaButtons = document.querySelectorAll('.empanada-btn');
+let selectedEmpanada = null;
+
+// Función para manejar la selección de empanada
+empanadaButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Quitar la clase 'selected' de cualquier otro botón
+        empanadaButtons.forEach(btn => btn.classList.remove('selected'));
+        
+        // Añadir la clase 'selected' al botón clicado
+        button.classList.add('selected');
+        
+        // Guardar el valor de la empanada seleccionada
+        selectedEmpanada = button.getAttribute('data-value');
+    });
+});
+
+let selectedGuarnicion = null;
+
+// Obtener el valor de guarnición seleccionada
+const guarnicionRadios = document.querySelectorAll('input[name="guarnicion"]');
+guarnicionRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+        selectedGuarnicion = this.value;
+    });
+});
+
+let productNotes = '';
+
+document.getElementById('product-notes').addEventListener('input', function() {
+    productNotes = this.value;
+});
+
+document.querySelector('.add-to-order-btn').addEventListener('click', function() {
+    const order = {
+        empanada: selectedEmpanada,
+        quantity: quantity,
+        guarnicion: selectedGuarnicion,
+        notes: productNotes
+    };
+    console.log(order); // Temporal, para ver en la consola lo que se envía
+
+    const messageElement = document.getElementById('confirmation-message');
+    messageElement.style.display = 'block';
+
+    // Ocultar el mensaje después de 3 segundos
+    setTimeout(function() {
+        messageElement.style.display = 'none';
+    }, 3000);
+});
+
+// Obtener el botón del carrito
+const cartButton = document.getElementById('carrito');
+
+// Añadir el evento de clic
+cartButton.addEventListener('click', function() {
+    // Redirigir a otra página (URL del carrito)
+    window.location.href = '/PP1-NOGH/calendario/menudia/carrito/carrito.html'; 
+});
 
 // Lógica para mostrar menús dependiendo del día seleccionado
 // let menus;
