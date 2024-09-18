@@ -41,3 +41,25 @@ body {
 .nav-link-custom.active {
     font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
 }
+
+.pedidos{
+    color:#FFECD1;
+    margin: 10px;
+
+}
+
+#button{
+    background-color: #c28a357e;
+    border: none;
+    border-radius: 8px;
+}
+
+.tabla{
+    background-color: #FFECD1;
+    border-radius: 8px;
+}
+
+.table-bodered{
+    color: #2e210c;
+    border-radius: 8px;
+}
