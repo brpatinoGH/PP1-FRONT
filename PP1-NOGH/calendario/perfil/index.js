@@ -1,8 +1,8 @@
-document.getElementById('btn1').addEventListener('click', function(){
-    window.location.href = './informacion/informacion.html';
+document.getElementById('btn2').addEventListener('click', function(){
+    window.location.href = './configuracion/configuracion.html';
 });
 
-document.getElementById('btn2').addEventListener('click', function(){
+document.getElementById('btn3').addEventListener('click', function(){
     window.location.href = './pedidos/pedidos.html';
 });
 
