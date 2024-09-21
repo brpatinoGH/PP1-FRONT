@@ -21,5 +21,34 @@
     </header>
 
     <h1 class="texto1">Encargado</h1>
+
+    <div id="carrito-container"></div>
+
+    <div class="contenedor-btn">
+        <button id="encargar-btn">Encargar</button>
+    </div>
+    
+    <!-- Modal Confirmar Pedido -->
+<div id="modalConfirmarPedido" class="modal">
+    <div class="modal-content">
+      <h3>Confirmar pedido</h3>
+      <div id="pedido-lista">
+        <!-- Aquí se inserta la lista de productos -->
+      </div>
+      <button id="confirmar-btn" class="confirmar-btn">Confirmar pedido</button>
+      <button id="volver-btn" class="volver-btn">Volver</button>
+    </div>
+  </div>
+  
+  <!-- Modal Pedido Realizado -->
+  <div id="modalPedidoRealizado" class="modal">
+    <div class="modal-content">
+      <h3>Pedido realizado</h3>
+      <p>Su pedido ya ha sido realizado</p>
+      <button id="continuar-btn" class="continuar-btn">Continuar</button>
+    </div>
+  </div>
+
+    <script src="carrito.js"></script>
 </body>
 </html>
