@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <img src="/PP1-NOGH/imag/forma.png" alt="forma">
+    <div class="contenedorRegistrarse">
+        <!-- Cuadrado grande para el formulario -->
+        <div class="rectangulo-">
+            <h1 class="tituloCrearCuenta">Crea tu cuenta</h1>
+            <h2 class="subtituloRegistrarse">Registrarse</h2>
+
+            <div class="inputNombreYApellido">
+            <!-- Campo para nombre -->
+            <div class="entradaNombre">
+                <input type="name" id="name" placeholder="Nombre" class="inputSinBorde">
+            </div>
+            <!-- Campo para apellido -->
+            <div class="entradaApellido">
+                <input type="lastName" id="lastName" placeholder="Apellido" class="inputSinBorde">
+            </div>
+            </div>
+            <!-- Campo para el email -->
+            <div class="entradaEmail">
+                <input type="email" id="email" placeholder="example@gmail.com" class="inputSinBorde">
+            </div>
+
+     <div class="contenedorDocumento">
+        <select class="tipoDocumento">
+            <option value="" disabled selected>Tipo de Documento</option>
+            <option value="dni">DNI</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="licencia">Licencia de Conducir</option>
+            </select>
+
+            <!-- Campo para número de documento -->
+            <input type="text" class="entradaDocumento"
+            placeholder="Número de Documento">
+    </div>
+
+    <!-- Contenedor para contraseñas -->
+    <div class="contenedorContraseñas">
+        <input type="password" class="entradaContraseña" placeholder="Contraseña">
+        <input type="password" class="entradaContraseñaConfirmada" placeholder="Confirmar Contraseña">
+    </div>
+    
+    <!-- Contenedor para país, localidad y provincia -->
+    <div class="contenedorDireccion">
+        <input type="text" class="entradaPais" placeholder="País">
+        <div class="contenedorLocalidadProvincia">
+            <input type="text" class="entradaLocalidad" placeholder="Localidad">
+            <input type="text" class="entradaProvincia" placeholder="Provincia">
+        </div>
+    </div>
+
+    <!-- Aceptación de términos -->
+    <div class="aceptacionTerminos">
+        <input type="checkbox" id="terminos" required>
+        <label for="terminos">Acepto los Términos y Condiciones</label>
+    </div>
+    
+    </div>
+            <!-- Botón de registrarse -->
+            <button class="botonRegistrarse">Registrarse</button>
+
+            <!-- Texto para iniciar sesión-->
+            <p class="crearCuenta">¿Ya tienes cuenta? <a href="../iniciar-sesion/iniciar-sesion.html" target="_blank">Inicia sesion</a></p>
+        </div>
+    </div>
+</body>
+</html>
