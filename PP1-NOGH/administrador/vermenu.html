@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Menú</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ver Menú</h1>
+
+        <!-- Selección de día -->
+        <form action="#" method="GET">
+            <label for="day-view">Elige un día para ver el menú:</label>
+            <select id="day-view" name="day">
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <!-- Añadir más días aquí -->
+            </select>
+            <button type="submit">Ver Menú</button>
+        </form>
+
+        <!-- Detalle del menú -->
+        <div id="menu-details">
+            <!-- Aquí se cargan los detalles del menú seleccionado -->
+        </div>
+
+        <!-- Opciones adicionales -->
+        <div id="menu-options">
+            <button id="modify-button">Modificar Menú</button>
+            <button id="delete-button">Eliminar Menú</button>
+        </div>
+    </div>
+</body>
+</html>
