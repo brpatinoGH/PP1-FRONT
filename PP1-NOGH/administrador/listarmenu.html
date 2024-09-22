@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Menús</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-management">
+            <h2>Gestión del Menú</h2>
+            
+            <div>
+                <h2>Lista de Productos</h2>
+                <ul id="productList">
+                    <!-- Los productos aparecerán aquí dinámicamente -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre Menú</th>
+                                <th>Fecha Creación</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Empanada: JyQ</td>
+                                <td>01/06/2024</td>
+                                <td>
+                                    <a href="modificarmenu.html" class="btn">Modificar</a>
+                                    <a href="eliminarmenu.html" class="btn btn-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>MEmpanada JyQ</td>
+                                <td>01/09/2024</td>
+                                <td>
+                                    <a href="modificarmenu.html" class="btn">Modificar</a>
+                                    <a href="eliminarmenu.html" class="btn btn-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                            <!-- Más filas de menús aquí -->
+                        </tbody>
+                    </table>
+                 </ul>
+            </div>
+            
+</body>
+</html>

@@ -1,5 +1,6 @@
 body {
     background-color: #436A36 !important;
+    overflow: hidden;
 }
 
 input {

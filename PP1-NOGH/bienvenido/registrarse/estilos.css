@@ -1,6 +1,7 @@
 /* Fondo del body */
 body {
     background-color: #436A36 !important;
+    overflow: hidden;
 }
 
 /* Ajustes generales para inputs y selects */

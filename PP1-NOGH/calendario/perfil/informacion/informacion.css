@@ -1,23 +1,37 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
 }
 
 body {
-  background-color: #436A36 !important;
+    background-color: #436A36 !important;
 }
 
+header{ /* pone los botones a la derecha*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Barra de navegación */
 .barra {
   background-color: #FFECD1;
   padding: 1rem 2rem;
 }
 
+/* Contenedor de enlaces de navegación */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
 
+/* Estilos de los enlaces de navegación */
 .nav-link-custom {
   color: #7c6f59;
   font-size: 1.5rem;
@@ -30,14 +44,17 @@ body {
   font-weight: 400;
 }
 
+/* Efecto hover en enlaces de navegación */
 .nav-link-custom:hover {
-    color: #2e210c;
+  color: #2e210c;
 }
 
 .nav-link-custom:focus {
-    outline: none;
+  outline: none;
 }
 
 .nav-link-custom.active {
-    font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
+  color: #2e210c; /* Color de texto resaltado */
+  font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
 }
+
