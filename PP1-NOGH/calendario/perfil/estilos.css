@@ -13,11 +13,26 @@ body {
   background-color: #436A36 !important;
 }
 
+header{ /* pone los botones a la derecha*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Barra de navegación */
 .barra {
     background-color: #FFECD1;
     padding: 1rem 2rem;
 }
 
+/* Contenedor de enlaces de navegación */
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+/* Estilos de los enlaces de navegación */
 .nav-link-custom {
     color: #7c6f59;
     font-size: 1.5rem;
@@ -30,6 +45,7 @@ body {
     font-weight: 400;
 }
 
+/* Efecto hover en enlaces de navegación */
 .nav-link-custom:hover {
     color: #2e210c;
 }
@@ -39,9 +55,10 @@ body {
 }
 
 .nav-link-custom.active {
-    
+    color: #2e210c; /* Color de texto resaltado */
     font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
 }
+
 
 .miCuenta{
     color:#FFECD1;

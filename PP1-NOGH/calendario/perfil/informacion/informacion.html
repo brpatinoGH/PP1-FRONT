@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Informacion</title>
+    <title>Información</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="informacion.css">
-    </head>
-
+    <link rel="stylesheet" href="informacion.css">
+</head>
+<body>
+    
     <header class="barra">
         <nav class="navbar container-fluid">
             <div class="navbar-links ms-auto">
-                <a href="#" class="nav-link-custom ">Encargá</a>
-                <a href="#" class="nav-link-custom ">Menú</a>
-                <a href="#" class="nav-link-custom active">Perfil</a>
+                <a href="../../calendario.html" class="nav-link-custom">Encargá</a>
+                <a href="../../menudia/menu-dia.html" class="nav-link-custom">Menú</a>
+                <a href="../index.html" class="nav-link-custom active">Perfil</a>
             </div>
         </nav>
     </header>
 
-    <mian class="contenedor">
+    <main class="contenedor">
         <div class="perfil">
             <h1>Información del usuario</h1>
         </div>
-    </mian>
 
-    <form action="../../../bienvenido/registrarse/registrarse.html" method="get">
+        <form action="../../../bienvenido/registrarse/registrarse.html" method="get">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </form>
+    </main>
 
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-
-        <div>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" required>
-        </div>
-
-        <div>
-            <label for="email">Correo electronico:</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-    </form>
-
-</head>
-<body>
-    
+    <script src="informacion.js"></script>
 </body>
 </html>
