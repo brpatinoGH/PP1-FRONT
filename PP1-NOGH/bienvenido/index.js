@@ -1,3 +1,7 @@
-document.getElementById("btn iniciosesion").addEventListener("click", function() {
-    window.location.href = "inicio-sesion.html"; // Cambia a la URL de tu pantalla de inicio de sesión
+document.getElementById('btn inicio').addEventListener('click', function(){
+    window.location.href = './inicia/inicia.html';
+});
+
+document.getElementById('btn registrarse').addEventListener('click', function(){
+    window.location.href = './registrarse/registrarse.html';
 });

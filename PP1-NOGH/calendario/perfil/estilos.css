@@ -53,7 +53,7 @@ body {
     height: auto;    */
     border-radius: 20px;
     width: 900px;
-    padding: 100px;
+    padding: 80px;
     background-color: #FFECD1;
     margin: 20px auto;
     text-align: right ;
@@ -103,3 +103,8 @@ body {
 #btn5 {
     background-color: #B3C7AB;
 }
+
+#btn6 {
+    background-color: #B3C7AB;
+}
+
