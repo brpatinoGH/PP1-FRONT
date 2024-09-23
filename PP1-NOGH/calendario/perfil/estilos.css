@@ -97,3 +97,24 @@ header {
     background-color: #544b3d33; /* Color diferente para algunos botones */
 }
 
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%; /* Mantiene el ancho al 90% */
+        padding: 40px 20px; /* Reduce el padding para un mejor ajuste */
+        border-radius: 15px; /* Reduce el radio de los bordes */
+    }
+
+    .custom-btn {
+        width: 100%; /* Cambia a 100% para que los botones ocupen todo el ancho */
+        padding: 10px; /* Reduce el padding para un mejor ajuste */
+        font-size: 1rem; /* Ajusta el tamaño de la fuente si es necesario */
+    }
+
+    .button-group {
+        margin-left: 0; /* Elimina el margen izquierdo para un mejor ajuste */
+    }
+
+    .nav-link-custom {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente en la barra de navegación */
+    }
+}

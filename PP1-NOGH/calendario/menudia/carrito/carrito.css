@@ -186,3 +186,26 @@ button:hover {
   background-color: #855e23;
 }
 
+@media (max-width: 768px) {
+  .texto1 {
+      font-size: 2rem; /* Ajusta el tamaño del texto */
+      margin: 2% 15px; /* Reduce los márgenes */
+      overflow-wrap: break-word; /* Asegura que el texto se ajuste */
+  }
+
+  .comida-item {
+      width: 100%; /* Asegura que cada item ocupe el ancho completo */
+      padding: 5px; /* Reduce el padding */
+  }
+
+  .modal-content {
+      width: 90%; /* Permite que el modal sea más ancho en pantallas pequeñas */
+      max-width: 300px; /* Mantiene un tamaño máximo */
+      padding: 15px; /* Reduce el padding */
+  }
+
+  button {
+      width: 100%; /* Asegura que los botones ocupen el ancho completo */
+      padding: 8px; /* Ajusta el padding */
+  }
+}

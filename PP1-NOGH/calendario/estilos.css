@@ -187,3 +187,20 @@ header{ /* pone los botones a la derecha*/
     color: #dac29a !important; /* Color del texto claro */
     border-color: #473d2e !important; /* Color del borde oscuro */
 }
+
+@media (max-width: 768px) {
+    .imagen {
+        width: 100vw; /* Ajusta a 100vw para evitar desbordamiento */
+        height: 100vh; /* Ajusta a 100vh si es necesario */
+    }
+    
+    .forma {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 60%; /* Reduce el ancho al 60% */
+        height: auto; /* Mantiene la altura automática */
+        max-width: none; /* Permite que se ajuste al nuevo ancho */
+        margin: auto; /* Centra el elemento */
+    }
+}

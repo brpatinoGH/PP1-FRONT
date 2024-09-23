@@ -359,3 +359,34 @@ header{ /* pone los botones a la derecha*/
     color: #aaa;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Ajusta el ancho del modal */
+        max-width: 90%; /* Mantiene un tamaño máximo */
+        padding: 15px; /* Reduce el padding */
+        border-radius: 10px; /* Asegura esquinas redondeadas */ 
+        max-height: 80vh; /* Establece una altura máxima */
+        overflow-y: auto; /* Permite desplazamiento vertical */
+    }
+
+    .modal {
+        padding: 20px; /* Agrega un poco de padding alrededor del modal */
+        overflow-y: auto; /* Permite desplazamiento vertical si es necesario */
+    }
+
+    .modal-body {
+        flex-direction: column; /* Cambia a columna si es necesario */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .modal-left, .modal-right {
+        width: 100%; /* Asegura que ambos lados ocupen el 100% del ancho */
+        margin-bottom: 20px; /* Espacio entre las secciones */
+    }
+
+    .forma2 {
+        width: 40%; /* Aumenta el tamaño de la imagen */
+        max-width: 20rem; /* Aumenta el tamaño máximo de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}

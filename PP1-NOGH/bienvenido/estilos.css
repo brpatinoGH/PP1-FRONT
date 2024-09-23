@@ -135,6 +135,8 @@ body {
 }
 
 /* Media queries para pantallas más pequeñas */
+/* Media queries para pantallas más pequeñas */
+/* Media queries para pantallas más pequeñas */
 @media (max-width: 768px) {
   .workoffice {
     width: 56%;
@@ -148,15 +150,44 @@ body {
 
   .titulo {
     font-size: 3rem; /* Reduce el tamaño del título en pantallas pequeñas */
-    margin-right: 3rem; /* Ajusta el margen a la derecha */
-    margin-top: 8rem;
-    margin-left: 1rem; /* Ajusta el margen a la izquierda para centrar mejor */
+    margin-right: 0; /* Elimina margen a la derecha */
+    margin-top: 5rem; /* Ajusta el margen superior */
+    margin-left: auto; /* Centra automáticamente */
+    margin-right: auto; /* Centra automáticamente */
   }
 
   .subtitulo {
     font-size: 1.2rem; /* Reduce el tamaño del subtítulo en pantallas pequeñas */
-    margin-right: 1rem; /* Ajusta el margen a la derecha */
-    margin-left: 1rem; /* Ajusta el margen a la izquierda para centrar mejor */
-    
+    margin: 0 auto; /* Centra automáticamente */
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column; /* Apila el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Mantiene la altura completa de la ventana */
+    margin: 0; /* Elimina margen */
+    margin-bottom: 0.10rem;
+  }
+
+  .mensaje {
+    font-size: 1.2rem; /* Tamaño del subtítulo en pantallas pequeñas */
+    margin: 1rem auto 0; /* Reduce el margen superior para acercarlo al botón */
+  }
+
+  .botones {
+    width: 80%; /* Ajusta el ancho del contenedor de botones */
+    margin-top: 1rem; /* Puedes ajustar esto si deseas más espacio */
+    display: flex;
+    flex-direction: column; /* Apila los botones verticalmente */
+    align-items: center; /* Centra los botones horizontalmente */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+  }
+
+  .btn.iniciosesion, .btn.registrarse {
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    padding: 0.8rem 1.5rem; /* Ajusta el padding para que sea más cómodo */
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
   }
 }
