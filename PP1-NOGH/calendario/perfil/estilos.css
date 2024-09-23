@@ -1,19 +1,20 @@
+/* estilos.css */
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  /* Elimina el scroll horizontal */
-  font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
 }
 
 body {
-  background-color: #436A36 !important;
+    background-color: #436A36 !important;
 }
 
-header{ /* pone los botones a la derecha*/
+header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -29,7 +30,6 @@ header{ /* pone los botones a la derecha*/
 .navbar-links {
     display: flex;
     gap: 2rem;
-    justify-content: flex-start;
 }
 
 /* Estilos de los enlaces de navegación */
@@ -40,9 +40,6 @@ header{ /* pone los botones a la derecha*/
     text-decoration: none;
     padding: 0.5rem;
     transition: color 0.3s;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: 400;
 }
 
 /* Efecto hover en enlaces de navegación */
@@ -50,78 +47,53 @@ header{ /* pone los botones a la derecha*/
     color: #2e210c;
 }
 
-.nav-link-custom:focus {
-    outline: none;
-}
-
 .nav-link-custom.active {
-    color: #2e210c; /* Color de texto resaltado */
-    font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
+    color: #2e210c;
+    font-weight: 600;
 }
 
-
-.miCuenta{
-    color:#FFECD1;
+.miCuenta {
+    color: #FFECD1;
     margin: 10px;
-}
-
-.contenedor{
-    /* position:static;
-    height: auto;    */
-    border-radius: 20px;
-    width: 900px;
-    padding: 80px;
-    background-color: #FFECD1;
-    margin: 20px auto;
-    text-align: right ;
-    gap: 10px;
-    margin-right: auto;
-    margin-left: 100px;
-    position: absolute;
-}
-
-.btn{
-    text-align: right;
-    display: flex ;
-    align-items: flex-end;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 .contenedor {
+    border-radius: 20px;
+    width: 900px;
+    padding: 80px 40px;
+    background-color: #FFECD1;
+    margin: 20px auto;
+    position: relative; /* Cambiado a relative */
     display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre el perfil y los botones */
+    justify-content: space-between; /* Espacio entre perfil y botones */
     align-items: center; /* Alinea verticalmente el perfil y los botones */
 }
-  
+
 .perfil {
-    /* Estilos específicos para el perfil */
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos dentro del perfil */
     gap: 20px;
 }
 
-#btn1 {
-    background-color: #B3C7AB;
-    top: 10px;
+.button-group {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en columna */
+    gap: 10px; /* Espacio entre los botones */
+    align-items: flex-end; /* Alinea los botones a la derecha */
+    margin-left: 20px; /* Ajusta este valor para moverlos más a la izquierda */
 }
 
-#btn2 {
-    background-color: #B3C7AB;
+
+.custom-btn {
+    width: 300px; /* Ancho fijo para todos los botones */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #B3C7AB; /* Color de fondo personalizado */
 }
 
-#btn3 {
-    background-color: #544b3d33;
-}
-
-#btn4 {
-    background-color: #544b3d33;
-}
-
-#btn5 {
-    background-color: #B3C7AB;
-}
-
-#btn6 {
-    background-color: #B3C7AB;
+#btn3, #btn4 {
+    background-color: #544b3d33; /* Color diferente para algunos botones */
 }
 
