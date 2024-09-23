@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #436A36 !important;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Barra de navegación */
+.barra {
+  background-color: #FFECD1;
+  padding: 1rem 2rem;
+}
+
+/* Contenedor de enlaces de navegación */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-link-custom {
+  color: #7c6f59;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Efecto hover en enlaces de navegación */
+.nav-link-custom:hover {
+  color: #2e210c;
+}
+
+.nav-link-custom:focus {
+  outline: none;
+}
+
+.nav-link-custom.active {
+  color: #2e210c; /* Color de texto resaltado */
+  font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
+}
+
+.confi {
+  color: #FFECD1;
+  text-align: center;
+  margin-top: 20px; /* Espacio superior para el título */
+}
+
+.contenedor {
+  background-color: #FFECD1;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;   /* Máximo ancho del contenedor */
+  padding: 20px;      /* Espaciado interno */
+  margin: 20px auto;  /* Centra horizontalmente con margen superior */
+  box-sizing: border-box;
+  min-height: 300px;  /* Altura mínima para evitar que sea muy pequeño */
+}
+
+/* Estilos para el formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
+  color: #333; /* Color de las etiquetas */
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Añade borde */
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  margin-top: 20px; /* Espacio superior para separación */
+}
+
+.btn-light {
+  background-color: #C28A35; /* Color de fondo del botón */
+  color: #FFECD1; /* Color del texto del botón */
+}
+
+.btn-light:hover {
+  background-color: #68491c; /* Color de fondo al pasar el mouse */
+}

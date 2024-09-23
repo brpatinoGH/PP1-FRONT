@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Menu dia</title>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css"> 
+</head>
+
+<body>
+
+    <header class="barra">
+        <nav class="navbar container-fluid">
+            <div class="navbar-links ms-auto">
+                <a href="../calendario.html" class="nav-link-custom">Encargá</a>
+                <a href="menudia/menu-dia.html" class="nav-link-custom active">Menú</a>
+                <a href="../perfil/index.html" class="nav-link-custom">Perfil</a>
+            </div>
+        </nav>
+    </header>
+
+   
+    <main class="menu-conteiner">
+        <h1 class="texto1">Menú del dia</h1>
+         <div class="selected-days-container">
+        <!-- Aquí se insertarán los botones correspondientes a los días seleccionados  -->
+         </div>
+    </main>
+
+    <h1 class="texto2">Comidas</h1>
+    <div class="container-comida">
+        <div class="container-button" onclick="openModal()">
+            <img src="../../imag/empanadadepollo.png" alt="EmpanadaPollo">
+            <h1>Empanada</h1>
+        </div>
+        <div class="container-button" onclick="openModal()">
+            <img src="../../imag/empanadadepollo.png" alt="EmpanadaPollo">
+            <h1>Empanada</h1>
+        </div>
+
+    </div>
+
+<!-- Modal (Ventana emergente) -->
+<div id="customModal" class="custom-modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Empanadas</h2>
+        <div class="modal-body">
+            <!-- Sección derecha -->
+            <div class="modal-right">
+                <div class="modal-image">
+                    <img src="../../imag/empanadadepollo.png" alt="Empanada">
+                </div>
+                <div class="empanada-types">
+                    <button class="empanada-btn">Pollo</button>
+                    <button class="empanada-btn">Carne</button>
+                    <button class="empanada-btn">CyQ</button>
+                    <button class="empanada-btn">Choclo</button>
+                    <button class="empanada-btn">JyQ</button>
+                    <button class="empanada-btn">Verdura</button>
+                </div>
+            </div>
+            <!-- Sección izquierda -->
+            <div class="modal-left">
+                <div class="guarnicion-options">
+                    <p>Guarnición</p>
+                    <label><input type="radio" name="guarnicion" value="No" checked> No</label>
+                    <label><input type="radio" name="guarnicion" value="Si"> Sí (seleccionar en menú correspondiente)</label>
+                </div>
+                <div class="unidades">
+                    <p>Unidades</p>
+                    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                    <span id="quantity">2</span>
+                    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="product-notes">
+                    <label for="product-notes">Notas para producto</label>
+                    <textarea id="product-notes" maxlength="100" placeholder="Escribe instrucciones del pedido"></textarea>
+                    <span class="char-count">0/100</span>
+                </div>
+                <!-- Mensaje de confirmación (inicialmente oculto con CSS 'display: none') -->
+                    <p id="confirmation-message" style="display: none; color: rgb(1, 58, 1);">¡El pedido ha sido agregado al carrito!</p>
+                <button class="add-to-order-btn">Agregar a mi pedido</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <h1 class="texto3">Guarnición</h1>
+    <div class="container-carrito">
+        <button id="carrito" class="carrito-btn">
+            <img src="../../imag/carrito.png" alt="Carrito" />
+        </button>
+        <div class="imagenes position-relative"> 
+            <img src="../../imag/forma2.png" alt="Forma2" class="forma2">
+        </div>
+        
+    </div>
+    
+
+    <script src="menu-dia.js"></script>
+
+</body>
+
+</html>

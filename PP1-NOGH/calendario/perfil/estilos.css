@@ -1,0 +1,99 @@
+/* estilos.css */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #436A36 !important;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Barra de navegación */
+.barra {
+    background-color: #FFECD1;
+    padding: 1rem 2rem;
+}
+
+/* Contenedor de enlaces de navegación */
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-link-custom {
+    color: #7c6f59;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+/* Efecto hover en enlaces de navegación */
+.nav-link-custom:hover {
+    color: #2e210c;
+}
+
+.nav-link-custom.active {
+    color: #2e210c;
+    font-weight: 600;
+}
+
+.miCuenta {
+    color: #FFECD1;
+    margin: 10px;
+    text-align: center;
+}
+
+.contenedor {
+    border-radius: 20px;
+    width: 900px;
+    padding: 80px 40px;
+    background-color: #FFECD1;
+    margin: 20px auto;
+    position: relative; /* Cambiado a relative */
+    display: flex;
+    justify-content: space-between; /* Espacio entre perfil y botones */
+    align-items: center; /* Alinea verticalmente el perfil y los botones */
+}
+
+.perfil {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro del perfil */
+    gap: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en columna */
+    gap: 10px; /* Espacio entre los botones */
+    align-items: flex-end; /* Alinea los botones a la derecha */
+    margin-left: 20px; /* Ajusta este valor para moverlos más a la izquierda */
+}
+
+
+.custom-btn {
+    width: 300px; /* Ancho fijo para todos los botones */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #B3C7AB; /* Color de fondo personalizado */
+}
+
+#btn3, #btn4 {
+    background-color: #544b3d33; /* Color diferente para algunos botones */
+}
+

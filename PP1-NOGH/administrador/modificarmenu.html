@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Menú</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modificar Menú</h1>
+        <form action="#" method="post">
+            <select id="menu-fijo" onchange="toggleDaySelection()" required>
+                <option value="">Selecciona Tipo de Menú</option>
+                <option value="fijo">Menú Fijo</option>
+                <option value="especial">Menú Especial</option>
+            </select>
+            <div id="special-day" style="display: none;">
+                <label for="day-select">Elige el Día para el Menú Especial:</label>
+                <select id="day-select">
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miércoles">Miércoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                </select>
+            </div>
+            <div>
+                <label for="menu-name">Nombre de la Comida:</label>
+                <input type="text" id="menu-name" name="menu-name" value="Empanada de JyQ" required>
+            </div>
+            <div id="category-field">
+                <label for="menu-category">Categoría de la Comida</label>
+                <input type="text" id="menu-category" name="menu-category" value="Empanada" required>
+            </div>
+            <div> 
+                <label for="stock">Stock disponible:</label>
+                <input type="number" id="stock" name="stock" required>
+            </div>
+            
+            <div>
+                <button type="submit">Guardar Cambios</button>
+            </div>
+        </form>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

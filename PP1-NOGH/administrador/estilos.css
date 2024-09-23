@@ -1,0 +1,145 @@
+/* Reset básico */
+/* Configuración general del sitio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #436A36;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #544B3D;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #544B3D;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFECD1; /* Color del contenedor */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto */
+}
+
+/* Formularios y campos de entrada */
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9f4e4;
+    border: 1px solid #c8d9bd;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Botones generales */
+button, .btn {
+    background-color: #C28A35; /* Color del botón */
+    color: #FFEED4;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #68491c; /* Color al pasar el mouse */
+}
+
+/* Estilo de los botones de acciones */
+.botones-acciones a {
+    display: inline-block;
+    background-color: #00796b; /* Color del botón de acción */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botones-acciones a:hover {
+    background-color: #004d40; /* Color al pasar el mouse */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para las secciones */
+#menu-details,
+#menu-options,
+.acciones {
+    margin-top: 30px;
+}
+
+#menu-options button {
+    margin-right: 10px;
+}
+
+/* Modificaciones específicas */
+#special-day {
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}
+/* Alinear etiquetas y entradas a la derecha */
+div {
+    text-align: center; /* Alinea el contenido de los divs a la derecha */
+}
+
+label {
+    display: inline-block; /* Asegura que las etiquetas no ocupen toda la línea */
+    margin-right: 10px; /* Espacio entre la etiqueta y el input */
+}
+
+input, select {
+    display: inline-block; /* Alinea los inputs y selects junto a las etiquetas */
+    margin-left: 5px; /* Espacio entre la etiqueta y el input */
+}

@@ -1,0 +1,188 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;
+  /* Elimina el scroll horizontal */
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #436A36 !important;
+}
+
+header{ /* pone los botones a la derecha*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* Barra de navegación */
+.barra {
+  background-color: #FFECD1;
+  padding: 1rem 2rem;
+}
+
+/* Contenedor de enlaces de navegación */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-link-custom {
+  color: #7c6f59;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* Efecto hover en enlaces de navegación */
+.nav-link-custom:hover {
+  color: #2e210c;
+}
+
+.nav-link-custom:focus {
+  outline: none;
+}
+
+.nav-link-custom.active {
+  color: #2e210c; /* Color de texto resaltado */
+  font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
+}
+
+.texto1 {
+  color: #FFECD1; 
+  font-size: 3rem;
+  margin-top: 2.5%;
+  margin-left: 30px;
+  text-align: center; /* Centramos el texto */
+  font-weight: 500;
+}
+
+#carrito-container {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.dia-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#carrito-container h3{
+  color: #FFECD1;
+}
+
+.comida-item {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px; /* Espacio entre los items de comida */
+  width: calc(50% - 10px); 
+  background-color: rgba(179, 199, 171, 0.548);
+}
+
+.comida-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.info-comida {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.eliminar-comida {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contenedor-btn {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */     /* Centrar verticalmente */  
+  padding: 10px;  /* Espacio interno para el contenedor */
+  box-sizing: border-box; /* Incluye padding en el tamaño total del contenedor */
+}
+
+button#encargar-btn {
+  padding: 10px 30px;
+  background-color: #C28A35;
+  color: #FFEED4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+}
+
+button#encargar-btn:hover {
+  background-color: #855e23;
+  color: #FFEED4;
+}
+
+/* Estilos generales del modal */
+.modal {
+  display: none; /* Escondido por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #F8EFD4;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.confirmar-btn{
+  background-color: #C28A35;
+  color: #fcf3e6;
+}
+.volver-btn{
+  background-color: #DAC7AB;
+  color: #544B3D;
+}
+
+.continuar-btn{
+  background-color: #C28A35;
+  color: #fcf3e6;
+}
+
+button:hover {
+  background-color: #855e23;
+}
+

@@ -1,0 +1,189 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Elimina el scroll horizontal */
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #436A36 !important;
+}
+
+header{/* pone los botones  ala derecha*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{ /* pone los botones a la derecha*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Barra de navegación */
+.barra {
+    background-color: #FFECD1;
+    padding: 1rem 2rem;
+}
+
+/* Contenedor de enlaces de navegación */
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-link-custom {
+    color: #7c6f59;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/* Efecto hover en enlaces de navegación */
+.nav-link-custom:hover {
+    color: #2e210c;
+}
+
+.nav-link-custom:focus {
+    outline: none;
+}
+
+.nav-link-custom.active {
+    color: #2e210c; /* Color de texto resaltado */
+    font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
+}
+
+
+.imagen{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.forma{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor {
+    text-align: center; /*centra el texto dentro del contenedor*/
+    padding: 20px;
+}
+
+.contenedor1{
+    padding-top: 3rem;
+}
+
+.titulo {
+    color: bisque; 
+    font-size: 3rem; /* ajusta el tamaño según sea necesario */
+    margin: right 0; /* elimina márgenes si no son necesarios */
+}
+
+.subtitulo {
+    color: bisque;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    /* ajusta el tamaño según sea necesario */
+    /* margin-right: 3.2rem; /* Elimina márgenes si no son necesarios */
+}
+
+.semana {
+    color: bisque;
+    font-size: 1.2rem;
+    /*ajusta el tamaño segun sea necesario*/
+}
+
+.mes {
+    color: bisque;
+    font-size: 1.2rem;
+}
+
+.diasEncargar {
+    text-align:center;/*centra el texto dentro del contenedor*/
+    font-size:medium; /* Tamaño de la fuente */
+    padding: 1rem 2rem;/* Espaciado interno */
+    border-radius: 1.2rem;/* Bordes redondeados */
+    border-left: none;/* elimina el borde  entre botones*/
+    font-weight: 450; /* Hace el texto más grueso */
+    position: relative;
+}
+
+#nombre-dia,#numero-dia,#mes{
+    color:#FFA014
+}
+
+.contendor-dias {
+    position: relative; /* Fija el contenedor en la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFECD1 !important;
+    border-radius: 2rem;
+    width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+    padding: 20px;  
+    margin-top:0rem; /* elimina márgenes externos para asegurarte de que el contenedor esté en el centro */
+}
+
+.buttonContinuar{
+    margin: 0 0;    
+    padding: 10px;
+    display: flex;
+}
+
+#btnContinuar{
+    margin-top: 1rem;
+    background-color:#C28A35;
+    border:none;
+    width: 200px;
+    color: white;
+}
+
+.custom-btn {
+    background-color: #FFD9A2 !important ;
+    color: #544B3D !important;
+    margin: 0 0;
+    border: #aa906b !important; /* Elimina el borde si no lo deseas */
+}
+
+/* Estilo para el botón al pasar el mouse sobre él */
+.custom-btn:hover {
+    background-color: #caa673 !important;
+    color: #887655 !important; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para el botón seleccionado */
+.custom-btn.selected {
+    background-color: #473d2e !important; /* Color de fondo oscuro */
+    color: #dac29a !important; /* Color del texto claro */
+    border-color: #473d2e !important; /* Color del borde oscuro */
+}

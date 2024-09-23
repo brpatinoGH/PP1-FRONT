@@ -1,0 +1,268 @@
+/* Fondo del body */
+body {
+    background-color: #436A36 !important;
+    overflow: hidden;
+}
+
+/* Ajustes generales para inputs y selects */
+input, select {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    
+}
+
+/* Contenedor principal de registro */
+.contenedorRegistrarse {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    width: 650px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 700px;
+    padding: 20px 10px;
+    background-color: #FFECD1 !important;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+.tituloCrearCuenta {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 50px; /* Ajusta el tamaño del texto si es necesario */
+    line-height: 1.2; /* Line-height ajustado para controlar el espacio */
+    text-align: center;
+    color: #DAC7AB;
+    margin-bottom: 0px; /* Menor espacio inferior */
+    margin-top: 0px; /* Elimina el margen superior */
+}
+
+/* Subtítulo */
+.subtituloRegistrarse {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #544B3D;
+    text-align: center;
+    margin: 0px 0; 
+}
+
+/* Contenedor de nombre y apellido */
+.inputNombreYApellido {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+/* Campos de entrada para nombre y apellido */
+.entradaNombre, .entradaApellido {
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 10%;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #CCC;
+    border-radius: 8px; /* Bordes menos redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Placeholder estilizado */
+.entradaNombre::placeholder, .entradaApellido::placeholder {
+    color: rgba(51, 51, 51, 0.6);
+    font-weight: 100%;
+    font-size: 20px;
+    width: 80%;
+}
+
+.entradaEmail{
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px; /* Bordes menos redondeados */
+
+}
+
+/* Placeholder estilizado */
+.entradaEmail::placeholder{
+    font-weight: 100%;
+    font-size: 20px;
+    width: 100%;
+}
+/* Estilo para el contenedor que agrupa los campos de tipo y número de documento */
+.contenedorDocumento {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alineación vertical */
+    width: 100%; /* Ancho completo */
+    gap: 0px; /* Espacio entre el select y el input */
+    margin-bottom: 20px; /* Espacio inferior para separar del siguiente bloque */
+}
+
+/* Estilo para tipo de documento y número de documento */
+.tipoDocumento, .entradaDocumento {
+    width: 48%; /* Ancho reducido para evitar que se solapen */
+    height: 50px; /* Altura reducida */
+    padding: 8px; /* Espaciado interno */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 18px; /* Tamaño de fuente reducido */
+    line-height: 150%; /* Ajuste de line-height */
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #CCC;
+    border-radius: 8px; /* Bordes menos redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 15px ;
+    margin-bottom: 5px; /* Espacio inferior para separar del siguiente campo */
+    text-align: center;
+    align-items: center;
+}
+
+/* Estilo para el select */
+.tipoDocumento {
+    appearance: none;
+}
+
+/* Placeholder estilizado para el select */
+.tipoDocumento option[disabled] {
+    color: rgba(51, 51, 51, 0.6);
+}
+
+/* Contenedor para contraseñas */
+.contenedorContraseñas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Campos de contraseña */
+.entradaContraseña, .entradaContraseñaConfirmada {
+    width: 48%;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+/* Contenedor de dirección */
+.contenedorDireccion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/* Contenedor de localidad y provincia */
+.contenedorLocalidadProvincia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo para el campo de país */
+.entradaPais {
+    margin: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+/* Campos de localidad y provincia */
+.entradaLocalidad, .entradaProvincia {
+    width: 48%;
+    font-size: 20px;
+}
+
+/* Estilo para checkbox de términos */
+.aceptacionTerminos {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido dentro del contenedor */
+    justify-content: flex-start; /* Alinea al inicio */
+    width: fit-content; /* Ajusta el ancho al contenido exacto */
+    margin: 10px auto; /* Centra el contenedor en el espacio disponible */
+    gap: 8px; /* Espacio entre el checkbox y el texto */
+}
+
+/* Estilo para el checkbox */
+.aceptacionTerminos input[type="checkbox"] {
+    margin: 0; /* Elimina márgenes */
+    cursor: pointer; /* Cambia el cursor al pasar por el checkbox */
+    width: 20px; /* Aumenta el tamaño del checkbox */
+    height: 20px; /* Aumenta el tamaño del checkbox */
+}
+
+/* Estilo para el texto del label */
+.aceptacionTerminos label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 20px; /* Aumenta el tamaño del texto */
+    color: #333333;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    margin: 0; /* Elimina márgenes */
+    cursor: pointer; /* Cambia el cursor al pasar por el texto */
+}
+
+/* Botón de registrarse */
+.botonRegistrarse {
+    width: 226px;
+    height: 54px;
+    background-color: #d39839;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFEED4;
+    cursor: pointer;
+
+}
+
+/* Hover para el botón de registrarse */
+.botonRegistrarse:hover {
+    background-color: #c3872f;
+
+}
+
+/* Estilo para el enlace de iniciar sesión */
+.iniciarSesion {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Hover para iniciar sesión */
+.iniciarSesion:hover {
+    color: #333333;
+    text-decoration: underline;
+}
