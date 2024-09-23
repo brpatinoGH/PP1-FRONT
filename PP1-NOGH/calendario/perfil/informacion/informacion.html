@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Información</title>
+    <title>Información del Usuario</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="informacion.css">
@@ -22,24 +21,15 @@
     </header>
 
     <main class="contenedor">
-        <div class="perfil">
-            <h1>Información del usuario</h1>
+        <h1 class="confi">Información del Usuario</h1>
+
+        <div class="perfil-info">
+            <p><strong>Nombre:</strong> Juan</p>
+            <p><strong>Apellido:</strong> Pérez</p>
+            <p><strong>DNI:</strong> 12345678</p>
+            <p><strong>Correo electrónico:</strong> juan.perez@gmail.com</p>
         </div>
 
-        <form action="../../../bienvenido/registrarse/registrarse.html" method="get">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido" required>
-            </div>
-            <div>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-        </form>
     </main>
 
     <script src="informacion.js"></script>

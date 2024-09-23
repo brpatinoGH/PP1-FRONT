@@ -4,7 +4,6 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   font-family: "Inter", sans-serif;
 }
 
@@ -12,7 +11,7 @@ body {
   background-color: #436A36 !important;
 }
 
-header{ /* pone los botones a la derecha*/
+header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -35,13 +34,12 @@ header{ /* pone los botones a la derecha*/
 .nav-link-custom {
   color: #7c6f59;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   padding: 0.5rem;
   transition: color 0.3s;
   background-color: transparent;
   cursor: pointer;
-  font-weight: 400;
 }
 
 /* Efecto hover en enlaces de navegación */
@@ -58,9 +56,10 @@ header{ /* pone los botones a la derecha*/
   font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
 }
 
-
-#contendor{
-  position: center;
+.confi {
+  color: #FFECD1;
+  text-align: center;
+  margin-top: 20px; /* Espacio superior para el título */
 }
 
 .contenedor {
@@ -68,32 +67,41 @@ header{ /* pone los botones a la derecha*/
   border-radius: 20px;
   width: 100%;
   max-width: 600px;   /* Máximo ancho del contenedor */
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;      /* Espaciado interno */
-  margin: 0 auto;     /* Centra horizontalmente */
+  margin: 20px auto;  /* Centra horizontalmente con margen superior */
   box-sizing: border-box;
   min-height: 300px;  /* Altura mínima para evitar que sea muy pequeño */
 }
-.form-group{
+
+/* Estilos para el formulario */
+.form-group {
   margin-bottom: 20px;
 }
 
-label{
+label {
   display: block;
+  margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
+  color: #333; /* Color de las etiquetas */
 }
 
-input{
+input {
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ccc; /* Añade borde */
   padding: 0.5rem;
   width: 100%;
-
 }
 
-.confi{
-  color: #FFECD1;
-  text-align: center;
+.btn-container {
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  margin-top: 20px; /* Espacio superior para separación */
+}
+
+.btn-light {
+  background-color: #C28A35; /* Color de fondo del botón */
+  color: #FFECD1; /* Color del texto del botón */
+}
+
+.btn-light:hover {
+  background-color: #68491c; /* Color de fondo al pasar el mouse */
 }

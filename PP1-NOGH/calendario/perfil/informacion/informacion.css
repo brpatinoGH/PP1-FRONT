@@ -12,49 +12,76 @@ body {
     background-color: #436A36 !important;
 }
 
-header{ /* pone los botones a la derecha*/
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 /* Barra de navegación */
 .barra {
-  background-color: #FFECD1;
-  padding: 1rem 2rem;
+    background-color: #FFECD1;
+    padding: 1rem 2rem;
 }
 
 /* Contenedor de enlaces de navegación */
 .navbar-links {
-  display: flex;
-  gap: 2rem;
-  justify-content: flex-start;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
 }
 
 /* Estilos de los enlaces de navegación */
 .nav-link-custom {
-  color: #7c6f59;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 0.5rem;
-  transition: color 0.3s;
-  background-color: transparent;
-  cursor: pointer;
-  font-weight: 400;
+    color: #7c6f59;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
 }
 
 /* Efecto hover en enlaces de navegación */
 .nav-link-custom:hover {
-  color: #2e210c;
+    color: #2e210c;
 }
 
 .nav-link-custom:focus {
-  outline: none;
+    outline: none;
 }
 
 .nav-link-custom.active {
-  color: #2e210c; /* Color de texto resaltado */
-  font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
+    color: #2e210c; /* Color de texto resaltado */
+    font-weight: 600; /* Puede añadir un poco más de peso para resaltar */
+}
+
+.contenedor {
+    background-color: #FFECD1;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;   /* Máximo ancho del contenedor */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;      /* Espaciado interno */
+    margin: 40px auto;  /* Margen superior para separar del header */
+    box-sizing: border-box;
+    min-height: 300px;  /* Altura mínima para evitar que sea muy pequeño */
+}
+
+.perfil-info {
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+    padding: 10px; /* Espaciado interno para mejor presentación */
+}
+
+.confi {
+    color: #544B3D; /* Cambié el color para que combine mejor */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
