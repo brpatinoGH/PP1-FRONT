@@ -1,3 +1,4 @@
+ HEAD
 html, body {
   margin: 0;
   padding: 0;
@@ -160,3 +161,198 @@ body {
     
   }
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Elimina el scroll horizontal */
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #436A36 !important;
+}
+
+.container-full {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajusta si necesitas */
+  color: #DAC7AB;
+}
+
+.titulo {
+  font-size: 5rem; /* Ajusta el tamaño según sea necesario */
+  margin-right: 6rem; /* Elimina márgenes si no son necesarios */
+}
+
+.subtitulo {
+  font-size: 1.8rem; /* Ajusta el tamaño según sea necesario */
+  margin-right: 3.2rem; /* Elimina márgenes si no son necesarios */
+}
+
+/* Ajusta los márgenes si es necesario */
+.header .titulo {
+  margin-bottom: -0.5rem; /* Ajusta el espacio entre el título y el subtítulo */
+}
+
+.imagenes {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.workoffice, .forma {
+  max-width: 100%;
+  height: auto;
+}
+
+.workoffice {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  max-width: 500px;
+}
+
+.forma {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%;
+  max-width: 150px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; /* Apila el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente si el contenedor tiene altura fija */
+  height: 100vh; /* Asegúrate de que el contenedor ocupe toda la altura de la ventana * /* Opcional: centra el texto dentro del contenedor */
+  margin-left: -35rem;
+  margin-top: 10rem;
+}
+
+.mensaje {
+  color: #DAC7AB;
+  margin-bottom: 0;
+  font-size: 2rem; /* Ajusta el tamaño según sea necesario */
+  margin-left: 14rem;
+  font-weight: 450;
+  margin: 0;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column; /* Apila los botones verticalmente */
+  align-items: center;    /* Centra los botones horizontalmente dentro del contenedor */
+  width: 400px;           /* Establece el ancho deseado para el contenedor */
+  padding: 1rem;         /* Añade algo de espacio interno alrededor del contenedor */
+  margin-left: 13.4rem;
+  margin-top: 9rem;
+  margin: 0;
+}
+
+.btn.iniciosesion, .btn.registrarse {
+  font-size: 1.5rem; /* Tamaño de la fuente */
+  padding: 1rem 2rem; /* Espaciado interno */
+  border-radius: 1.2rem; /* Bordes redondeados */
+  border: none; /* Elimina el borde */
+  font-weight: 450; /* Hace el texto más grueso */
+  transition: background-color 0.3s ease; /* Animación de cambio de color */
+  width: 100%; /* Los botones ocuparán el 100% del ancho del contenedor */
+  margin-bottom: 1.5rem; /* Espacio entre los botones */
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn.registrarse{
+  background-color: #DAC7AB;
+  color: #544B3D;
+}
+
+.btn.iniciosesion{
+  background-color: #C28A35; /* Color de fondo */
+  color: #FFEED4; /* Color del texto */
+}
+
+/* Opcional: Estilo de hover para los botones */
+.btn.iniciosesion:hover{
+  background-color: #A0732A; /* Color de fondo al pasar el mouse */
+}
+
+.btn.registrarse:hover {
+  background-color: #b6a68f;
+  color: #776b56;
+}
+
+/* Media queries para pantallas más pequeñas */
+/* Media queries para pantallas más pequeñas */
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .workoffice {
+    width: 56%;
+    max-width: 500px;
+  }
+
+  .forma {
+    width: 25%;
+    max-width: 120px;
+  }
+
+  .titulo {
+    font-size: 3rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    margin-right: 0; /* Elimina margen a la derecha */
+    margin-top: 5rem; /* Ajusta el margen superior */
+    margin-left: auto; /* Centra automáticamente */
+    margin-right: auto; /* Centra automáticamente */
+  }
+
+  .subtitulo {
+    font-size: 1.2rem; /* Reduce el tamaño del subtítulo en pantallas pequeñas */
+    margin: 0 auto; /* Centra automáticamente */
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column; /* Apila el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Mantiene la altura completa de la ventana */
+    margin: 0; /* Elimina margen */
+    margin-bottom: 0.10rem;
+  }
+
+  .mensaje {
+    font-size: 1.2rem; /* Tamaño del subtítulo en pantallas pequeñas */
+    margin: 1rem auto 0; /* Reduce el margen superior para acercarlo al botón */
+  }
+
+  .botones {
+    width: 80%; /* Ajusta el ancho del contenedor de botones */
+    margin-top: 1rem; /* Puedes ajustar esto si deseas más espacio */
+    display: flex;
+    flex-direction: column; /* Apila los botones verticalmente */
+    align-items: center; /* Centra los botones horizontalmente */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+  }
+
+  .btn.iniciosesion, .btn.registrarse {
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    padding: 0.8rem 1.5rem; /* Ajusta el padding para que sea más cómodo */
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
+  }
+}
+

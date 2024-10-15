@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Selecciona todos los botones de días
     const buttons = document.querySelectorAll('.diasEncargar button');
     const btnContinuar = document.getElementById('btnContinuar');
-
     // Recupera los días seleccionados del localStorage al cargar la página
     let selectedDays = JSON.parse(localStorage.getItem('selectedDays')) || [];
 
@@ -50,4 +49,3 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'menudia/menu-dia.html';
     });
 });
-

@@ -115,4 +115,3 @@ let carrito = [
    
   });
   
-  

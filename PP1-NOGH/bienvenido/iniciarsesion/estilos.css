@@ -132,21 +132,17 @@ input {
 .contraseñaOlvidada {
     width: 305px;
     height: 44px;
-    
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 200%;
-    
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Alinea el texto hacia la derecha */
     text-transform: lowercase;
-    
     color: #544B3D;
     margin-bottom: 1px; /* Espacio inferior para separación */
-    
     text-decoration: none; /* Quita el subrayado del enlace */
     cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
 }
@@ -181,4 +177,142 @@ input {
 /* Hover para el botón de iniciar sesión */
 .botonIniciarSesion:hover {
     background-color: #c3872f; /* Color más oscuro al pasar el cursor */
+}
+
+.img {
+    width: 40%; /* Ancho por defecto */
+}
+
+/* Media query para iPhone SE (320px de ancho) */
+@media (max-width: 320px) {
+    body {
+        display: flex; /* Usar flexbox en el body */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        height: 100vh; /* Hacer que el body ocupe toda la altura de la ventana */
+        margin: 0; /* Eliminar márgenes por defecto */
+        overflow: hidden; /* Para evitar scroll */
+    }
+
+    .contenedorLogin {
+        position: fixed; /* Usar fixed para que esté en la vista */
+        top: 50%; /* Centrar verticalmente */
+        left: 30%; /* Centrar horizontalmente */
+        transform: translate(-4%, -20%); /* Ajustar para centrar completamente */
+        width: 90%; /* Ajustar ancho */
+        max-width: 300px; /* Limitar ancho máximo */
+        padding: 40px 20px; /* Espaciado interno */
+        background-color: #FFECD1 !important; /* Color de fondo */
+        border-radius: 20px; /* Bordes redondeados */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+
+    .bienvenido {
+        font-size: 30px; /* Reducir el tamaño de la fuente */
+    }
+
+    .subtituloIniciarSesion {
+        font-size: 20px; /* Ajustar subtitulo */
+    }
+
+    .entradaEmail, .entradaContraseña {
+        width: 90%
+    }
+    .contraseñaOlvidada a {
+        width: 80%
+    }
+    .botonIniciarSesion {
+        width: 180px; /* Ajustar el ancho del botón */
+        height: 45px; /* Ajustar la altura */
+        font-size: 18px; /* Reducir el tamaño de la fuente */
+    }
+
+    .img{
+        width: 80%; /* Ajustar el ancho a un 80% en pantallas pequeñas */
+        max-width: 300px; /* Limitar el ancho máximo si es necesario */
+    }
+}
+
+/* Media query para pantallas medianas (iPhone 8 y otros dispositivos similares) */
+@media (max-width: 768px) {
+    .contenedorLogin {
+        margin: 5px;
+        width: 90%; /* Ocupa un 90% del ancho de la pantalla */
+        max-width: 300px; /* Limita el ancho máximo a 300px en pantallas pequeñas */
+    }
+    }
+
+    .bienvenido {
+        font-size: 48px;
+    }
+
+    .subtituloIniciarSesion {
+        font-size: 24px;
+    }
+
+    .entradaEmail,
+    .entradaContraseña {
+        width: 90%
+    }
+
+    .inputSinBorde {
+        width: 90%
+    }
+
+    .contraseñaOlvidada a {
+        width: 80%
+    }
+
+    .botonIniciarSesion {
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .crearCuenta {
+        font-size: 20px;
+    }
+
+
+@media (max-width: 480px) {
+    .contenedorLogin {
+        margin: 5px;
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+
+    .bienvenido {
+        font-size: 36px;
+    }
+
+    .subtituloIniciarSesion {
+        font-size: 20px;
+    }
+
+    .entradaEmail,
+    .entradaContraseña {
+        height: 50px;
+    }
+
+    .inputSinBorde {
+        font-size: 18px;
+    }
+
+    .inputSinBorde::placeholder {
+        font-size: 16px;
+    }
+
+    .contraseñaOlvidada a {
+        font-size: 18px;
+    }
+
+    .botonIniciarSesion {
+        width: 180px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .crearCuenta {
+        font-size: 18px;
+    }
 }

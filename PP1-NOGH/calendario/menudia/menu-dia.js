@@ -241,4 +241,3 @@ cartButton.addEventListener('click', function() {
 
 //         buttonsContainer.appendChild(containerButton);
 //     }
-// });
