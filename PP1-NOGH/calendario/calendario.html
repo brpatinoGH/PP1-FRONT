@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calendario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+<body>
+
+    <header class="barra">
+        <nav class="navbar container-fluid">
+            <div class="navbar-links ms-auto">
+                <a href="#" class="nav-link-custom active">Encargá</a>
+                <a href="perfil/index.html" class="nav-link-custom">Perfil</a>
+            </div>
+        </nav>
+    </header>
+
+   
+    <main class="contenedor">
+
+        <div class="contenedor1">
+            <h1 class="imagen">
+                <img src="../imag/forma.png" alt="Forma decorativa" class="forma img-fluid">
+            </h1>
+        </div>
+
+        <div class="container-titulos">
+            <h1 class="titulo">Encargá</h1>
+            <h2 class="subtitulo"> Encargando un <span id="nombre-dia"></span> <span id="numero-dia"></span> <spans id="mes"></span> 22 de Julio.</h2>
+            <h2 class="semana">Elegí los días que quieras almuerzo</h2>
+        </div>
+
+        <div class="contendor-dias">
+            <div class="diasEncargar">
+                <button id="btn-lunes" type="button" class="btn btn-light btn-lg custom-btn">Lunes</button>
+                <button id="btn-martes" type="button" class="btn btn-light btn-lg custom-btn">Martes</button>
+                <button id="btn-miercoles" type="button" class="btn btn-light btn-lg custom-btn">Miércoles</button>
+                <button id="btn-jueves" type="button" class="btn btn-light btn-lg custom-btn">Jueves</button>
+                <button id="btn-viernes" type="button" class="btn btn-light btn-lg custom-btn">Viernes</button>
+            </div>
+            
+        </div>
+        <div class="buttonContinuar">
+            <button id="btnContinuar" type="button" class="btn btn-warning" disabled>Continuar</button>
+        </div>
+
+    </main>
+
+    <aside>
+        
+    </aside>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
